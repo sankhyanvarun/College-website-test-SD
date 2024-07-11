@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard Prototype</title>
+    <link rel="stylesheet" href="01.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="profile-photo-container">
+                <img src="hp-gov.jpg" alt="Scholar Photo" class="scholar-photo">
+            </div>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Payment Info</a></li>
+                <li><a href="#">Registration</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Drop Semester</a></li>
+                <li><a href="#">Result</a></li>
+                <li><a href="#">Notice</a></li>
+                <li><a href="#">Schedule</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="top-bar">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                </div>
+                <div class="profile">
+                    <img src="profile-photo.jpg" alt="Profile Photo" class="profile-photo">
+                    <span class="student-name">Varun Sankhyan</span>
+                    <span class="student-year">3rd year</span>
+                </div>
+            </div>
+            <div class="welcome-section">
+                <div class="date">July 7, 2024</div>
+                <div class="welcome-message">
+                    <h1>Welcome back,Varun!</h1>
+                    <p>Always stay updated in your student portal</p>
+                </div>
+            </div>
+            <div class="charts-and-instructors">
+                <div class="charts">
+                    <div class="attendance-section">
+                        <h3>Attendance</h3>
+                        <canvas id="attendanceChart" width="80" height="80"></canvas>
+                        <div class="chart-label" id="attendanceLabel">30%</div>
+                    </div>
+                    <div class="cgpa-section">
+                        <h3>CGPA</h3>
+                        <canvas id="cgpaChart" width="80" height="80"></canvas>
+                        <div class="chart-label02" id="cgpaLabel">9.0</div>
+                    </div>
+                </div>
+                <div class="instructors">
+                    <h3>Course Instructors <a href="#" class="see-all">See all</a></h3>
+                    <div class="instructor-photo"><img src="profile-photo.jpg" alt="Instructor 1">Aryan</div>
+                    <div class="instructor-photo"><img src="profile-photo.jpg" alt="Instructor 2">Nitin</div>
+                    <div class="instructor-photo"><img src="profile-photo.jpg" alt="Instructor 3">Sarthak</div>
+                </div>
+            </div>
+            <div class="courses-and-notices">
+                <div class="courses-section">
+                    <h3>Enrolled Courses</h3>
+                    <div class="course-card">
+                        <p>Object oriented programming</p>
+                        <button>View</button>
+                    </div>
+                    <div class="course-card">
+                        <p>Data Structure and Algorithm</p>
+                        <button>View</button>
+                    </div>
+                </div>
+                <div class="notices">
+                    <h3>Daily Notice <a href="#" class="see-all">See all</a></h3>
+                    <div class="notice">
+                        <h4>Mausam</h4>
+                        <p>Due to Heavy rain all Roads are blocked , Holidays are diclayered</p>
+                        <a href="#">See more</a>
+                    </div>
+                    <div class="notice">
+                        <h4>Exam schedule</h4>
+                        <p>All Exams are cancelled and all are requested to not come to college</p>
+                        <a href="#">See more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="01.js"></script>
+</body>
+</html>
