@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }]
         },
         options: {
-            cutout: '80%',
+            cutout: '60%',
             plugins: {
                 legend: {
                     display: false
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }]
         },
         options: {
-            cutout: '75%',
+            cutout: '70%',
             plugins: {
                 legend: {
                     display: false
@@ -50,4 +50,22 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('attendanceLabel').innerText = '30%';
 
     document.getElementById('cgpaLabel').innerText = '9.0';
+});
+const seeAllNotices = document.getElementById("seeAllNotices");
+const noticeModal = document.getElementById("noticeModal");
+const closeBtn = noticeModal.querySelector(".close");
+
+seeAllNotices.addEventListener("click", function(event) {
+    event.preventDefault();
+    noticeModal.style.display = "flex";
+});
+
+closeBtn.addEventListener("click", function() {
+    noticeModal.style.display = "none";
+});
+
+window.addEventListener("click", function(event) {
+    if (event.target == noticeModal) {
+        noticeModal.style.display = "none";
+    }
 });
