@@ -28,18 +28,22 @@
         <div class="main-content">
             <div class="top-bar">
                 <div class="search-bar">
-                    <input type="text" placeholder="Search">
+                    <input type="text" placeholder="Search                                                                🔍">
                 </div>
                 <div class="profile">
-                    <img src="profile-photo.jpg" alt="Profile Photo" class="profile-photo">
-                    <span class="student-name">Varun Sankhyan</span>
-                    <span class="student-year">3rd year</span>
+                    <div class="profile-detail">
+                        <span class="student-name">Varun Sankhyan</span>
+                        <span class="student-year">3rd year</span>                    </div>
+                        <div class="profile-photo">
+                            <img src="profile-photo.jpg" alt="Profile Photo" class="profile-photo">
+                        </div>
                 </div>
+               
             </div>
             <div class="welcome-section">
                 <div class="date">July 7, 2024</div>
                 <div class="welcome-message">
-                    <h1>Welcome back,Varun!</h1>
+                    <h1>Welcome back, Varun!</h1>
                     <p>Always stay updated in your student portal</p>
                 </div>
             </div>
@@ -57,15 +61,19 @@
                     </div>
                 </div>
                 <div class="instructors">
-                    <h3>Course Instructors <a href="#" class="see-all">See all</a></h3>
-                    <div class="instructor-photo"><img src="profile-photo.jpg" alt="Instructor 1">Aryan</div>
-                    <div class="instructor-photo"><img src="profile-photo.jpg" alt="Instructor 2">Nitin</div>
-                    <div class="instructor-photo"><img src="profile-photo.jpg" alt="Instructor 3">Sarthak</div>
+                    <h3>Course Instructors <a href="#" class="see-all" id="seeAllInstructors">See all</a></h3>
+                    <div class = "instructor-show">
+                        <div class="instructor-photo"><img src="profile-photo.jpg" alt="Instructor 1">Aryan</div>
+                        <div class="instructor-photo"><img src="profile-photo.jpg" alt="Instructor 2">Nitin</div>
+                        <div class="instructor-photo"><img src="profile-photo.jpg" alt="Instructor 3">Sarthak</div>
+
+                    </div>
+                  
                 </div>
             </div>
             <div class="courses-and-notices">
                 <div class="courses-section">
-                    <h3>Enrolled Courses</h3>
+                    <h3>Enrolled Courses <a href="#" class="see-all" id="seeAllInstructors">See all</a></h3>
                     <div class="course-card">
                         <p>Object oriented programming</p>
                         <button>View</button>
@@ -76,17 +84,67 @@
                     </div>
                 </div>
                 <div class="notices">
-                    <h3>Daily Notice <a href="#" class="see-all">See all</a></h3>
+                    <h3>Daily Notice <a href="#" class="see-all" id="seeAllNotices">See all</a></h3>
                     <div class="notice">
                         <h4>Mausam</h4>
-                        <p>Due to Heavy rain all Roads are blocked , Holidays are diclayered</p>
-                        <a href="#">See more</a>
+                        <p>Due to Heavy rain all Roads are blocked, Holidays are declared</p>
                     </div>
                     <div class="notice">
                         <h4>Exam schedule</h4>
                         <p>All Exams are cancelled and all are requested to not come to college</p>
-                        <a href="#">See more</a>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="instructorModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Course Instructors</h2>
+            <div class="instructor-details">
+                <div class="instructor-detail">
+                    <img src="profile-photo.jpg" alt="Instructor 1">
+                    <div>
+                        <h4>Aryan</h4>
+                        <p>Course: XYZ</p>
+                        <p>Email: aryan@example.com</p>
+                    </div>
+                </div>
+                <div class="instructor-detail">
+                    <img src="profile-photo.jpg" alt="Instructor 2">
+                    <div>
+                        <h4>Nitin</h4>
+                        <p>Course: ABC</p>
+                        <p>Email: nitin@example.com</p>
+                    </div>
+                </div>
+                <div class="instructor-detail">
+                    <img src="profile-photo.jpg" alt="Instructor 3">
+                    <div>
+                        <h4>Sarthak</h4>
+                        <p>Course: DEF</p>
+                        <p>Email: sarthak@example.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="noticeModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Daily Notices</h2>
+            <div class="notice-details">
+                <div class="notice">
+                    <h4>Mausam</h4>
+                    <p>Due to Heavy rain all Roads are blocked, Holidays are declared</p>
+                </div>
+                <div class="notice">
+                    <h4>Exam schedule</h4>
+                    <p>All Exams are cancelled and all are requested to not come to college</p>  
+                </div>
+                <div class="notice">
+                    <h4>Website</h4>
+                    <p>   A team of some students are building a new website for the college</p>
                 </div>
             </div>
         </div>
