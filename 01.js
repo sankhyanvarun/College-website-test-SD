@@ -69,3 +69,22 @@ window.addEventListener("click", function(event) {
         noticeModal.style.display = "none";
     }
 });
+
+const seeAllInstructors = document.getElementById("seeAllInstructors");
+const instructorModal = document.getElementById("instructorModal");
+const closeButn = instructorModal.querySelector(".close");
+
+seeAllInstructors.addEventListener("click", function(event) {
+    event.preventDefault();
+    instructorModal.style.display = "flex";
+});
+
+closeBtn.addEventListener("click", function() {
+    instructorModal.style.display = "none";
+});
+
+window.addEventListener("click", function(event) {
+    if (event.target == instructorModal) {
+        instructorModal.style.display = "none";
+    }
+});
