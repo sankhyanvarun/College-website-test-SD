@@ -2,7 +2,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color:#b6e5bd ;
+    /* background-color:#b6e5bd ; */
+    background-image:url(back0.jpg) ; 
+    background-size:cover;
 }
 
 .container {
@@ -22,7 +24,7 @@ body {
 
 .sidebar ul {
     list-style: none;
-    padding: 10;
+    padding: 10px;
 }
 
 .sidebar ul li {
@@ -49,7 +51,7 @@ body {
 .scholar-photo {
     width: 100%;
     height: 110%;
-    border-radius: 1%;
+    border-radius: 10%;
     object-fit:fill;
     margin-bottom: 5px;
 }
@@ -82,6 +84,8 @@ body {
 }
 
 .profile-detail {
+    color: #ecf0f1;
+    font-style: serif;
     display:flex;
     flex-direction:column;
 }
@@ -90,7 +94,7 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    object-fit:fill;
+    object-fit:inherit;
     margin-right: 0px;
 }
 
@@ -106,24 +110,26 @@ body {
 }
 
 .welcome-section {
-    /* background-color: #ecf0f1; */
+    background-color: #234047;
     color: #ffffff;
-    background-image:url(nalanda.jpg) ; 
+    /* border-radius: 10%; */
+    /* background-image:url(nalanda.jpg) ;  */
     background-size:cover;
-    padding: 20px;
-    border-radius: 4px;
-    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 3%;
+    margin-bottom: 0px;
 }
 
 .welcome-section .date {
-    color: #d1e915;
+    color: #e38e18;
     margin-bottom: 10px;
 }
 
 .charts-and-instructors {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
+    position: relative;
 }
 
 .charts {
@@ -137,6 +143,8 @@ body {
     height: 50%;
     text-align: center;
     margin-left: 20%;
+    color: #ecf0f1;
+    /* font-style:oblique ; */
 
 }
 
@@ -147,19 +155,21 @@ body {
 }
 
 .instructors {
-    width: 45%;
-    
+    /* width: %; */
+    color: #ecf0f1;
 }
 .instructor-show {
     display:flex;
     flex-direction:row ;   
+    height: 0%;
+    width: 0%;
 }
 
 .instructors .instructor-photo {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 30%;
+
 }
 
 .instructors .instructor-photo img {
@@ -173,17 +183,20 @@ body {
 .courses-and-notices {
     display: flex;
     justify-content: space-between;
+
 }
 
 .courses-section, .notices {
     width: 45%;
+    color: #ecf0f1;
 }
 
 .course-card, .notice {
-    background-color: #ecf0f1;
+    background-color:#373939;
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 10px;
+    color: #e38e18;
 }
 
 .course-card button, .notice a {
